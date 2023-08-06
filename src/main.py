@@ -14,6 +14,6 @@ with TelegramClient('bot', api_id, api_hash).start(bot_token=bot_token) as bot:
     @bot.on(events.ChatAction)
     async def chat_action(event):
         if event.user_joined:
-            await event.reply(file="/var/engenhacao/welcome-to-hell.mp4")
+            await event.reply(file="/var/engenhacao/media/welcome-to-hell.mp4")
 
-   bot.run_until_disconnected()
+    bot.run_until_disconnected()
